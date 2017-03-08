@@ -1,0 +1,432 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Explora</title>
+      <!-- Latest compiled and minified CSS -->
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+       <!-- Optional theme -->
+     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css">
+
+        <!-- Latest compiled and minified JavaScript -->
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+     <link rel="icon" href="http://www.freeiconspng.com/uploads/blue-question-mark-icon-5.png">
+    <link rel="stylesheet" type="text/css" href="custom.css" />
+      <link href="hover-master/css/hover.css" rel="stylesheet" />
+    <link href="css/bootstrap.min.css" rel="stylesheet" />
+    <link href="css/bootstrap-theme.min.css" rel="stylesheet" />
+    <link href="css/hover.css" rel="stylesheet" media="all">
+   <script src="https://use.fontawesome.com/c2f69e7dbb.js"></script>
+    <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet" media="all">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+ <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+ <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</head>
+<body>
+  <nav class="navbar navbar-default">
+    <!-- nav section starts -->
+    <div class="container-fluid">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a href="index.html"><img class="hvr-pulse-grow"  src="http://www.freeiconspng.com/uploads/blue-question-mark-icon-5.png" width="67px" height="44px"></a>
+      </div>
+      <div class="collapse navbar-collapse" id="myNavbar">
+        <form class="navbar-form navbar-right">
+              <a href="index.html" class="hvr-icon-spin">Explora</a>
+      <div class="input-group">
+          <input type="text" class="form-control" placeholder="Search YouR Question...">
+        <div class="input-group-btn">
+       <button class="btn btn-default hvr-rectangle-out" href="#" type="submit"><i class="glyphicon glyphicon-search"></i></button>
+       </div>
+      </div>
+    </form>
+      </div>
+    </div>
+  </nav>
+  <!--nav section ends  -->
+  <!-- post question section starts -->
+    <div class="container-fluid">
+      <div class="col-md-8 col-sm-10">
+      <section class="postquestion">
+      <button type="button" id=""class="btn btn-lg btn-outline-success hvr-shadow-radial"  data-toggle="modal" data-target="#myModal">Post Question</button>
+
+      <!-- Modals -->
+      <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+        <div class="modal-dialog modal-lg" role="document">
+
+          <!-- Modals content-->
+          <div class="modal-content">
+            <div class="modal-header">
+              <button type="button" class="close" data-dismiss="modal">&times;</button>
+              <h4 class="modal-title" ><b>Post Your Question</b></h4>
+            </div>
+            <div class="modal-body form-group">
+              <ul>
+              <div class="form-group"><li><label for="Name-text" class="control-label">NAME: <span class="glyphicon glyphicon-user"></span></label> <input type="text" class="form-control" id="contactname" name="user" size="30" maxlength="18" placeholder="Username"></li></div>
+                <div class="form-group"><li><label for="email" class="control-label">EMAIL-ID: <span class="glyphicon glyphicon-envelope"></span></label> <input type="email" class="form-control" id="contactemail" name="emailid" size="30" placeholder="Enter a valid email address"></li></div>
+                <div class="form-group"><li><label for="phone" class="control-label">PHONE NO: <span class="glyphicon glyphicon-phone-alt"></span></label> <input type="text" class="form-control" id="contactno" name="phno" size="30" maxlength="10" placeholder="Enter a valid phone number" pattern="[0-9]{10}"></li></div>
+               <br />
+               <div class="container-fluid">
+                 <div class="col-md-6 col-sm">
+                   <ul>
+                  <li>
+                 <div class="dropdown">
+                    <button class="btn btn-success hvr-glow" type="button" id="semesterbutton"><a href="#" class="hvr-icon-down">Select Semester</a></button>
+                   <div class="dropdown-content">
+                     <ul>
+                                       <li><a href="#" class="hvr-icon-down">First</a></li>
+                                       <li><a href="#" class="hvr-icon-down">Second</a></li>
+                                       <li><a href="#" class="hvr-icon-down">Third</a></li>
+                                       <li><a href="#" class="hvr-icon-down">Fourth</a></li>
+                                       <li><a href="#" class="hvr-icon-down">Fifth</a></li>
+                                       <li><a href="#" class="hvr-icon-down">Sixth</a></li>
+                                       <li><a href="#" class="hvr-icon-down">Seventh</a></li>
+                                       <li><a href="#" class="hvr-icon-down">Eighth</a></li>
+
+                 </ul>
+                 </div>
+                 </div>
+               </li>
+             </ul>
+             </div>
+              <div class="col-md-6 col-sm">
+<ul>
+  <li>
+ <div class="dropdown">
+    <button class="btn btn-success hvr-glow" type="button" id="subjectbutton"><a href="#" class="hvr-icon-down">Choose Subject</a></button>
+   <div class="dropdown-content">
+     <ul>
+                       <li><a href="#" class="hvr-icon-down">Data Structure</a></li>
+                       <li><a href="#" class="hvr-icon-down">Java</a></li>
+                       <li><a href="#" class="hvr-icon-down">C Programming</a></li>
+                       <li><a href="#" class="hvr-icon-down">Algorithms</a></li>
+                       <li><a href="#" class="hvr-icon-down">Software Testing</a></li>
+                       <li><a href="#" class="hvr-icon-down">Mathematics</a></li>
+ </ul>
+ </div>
+ </div>
+</li>
+</ul>
+  </div>
+
+               </div>
+               <br/>
+                 <div class="form-group"><li><label for="tags-text" class="control-label">RELATED TAGS: <span class="glyphicon glyphicon-tags"></span></label><input type="text" class="form-control" id="relatedtag" name="subject" size="30" placeholder="Mention Tags Here"></li></div>
+                 <div class="form-group"><li><label for="message-text" class="control-label">POST YOUR QUESTION: <span class="glyphicon glyphicon-text-size"></span></label><textarea class="form-control" id="texthere" placeholder="Write YouR Question Here.."></textarea></li></div>
+                </ul>
+            </div>
+            <div class="modal-footer">
+              <button type="button" id="postbtn" class="btn btn-success" data-dismiss="modal">Post</button>
+              <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+            </div>
+          </div>
+
+        </div>
+      </div>
+      </section>
+    </div>
+    <div class="col-md-4 col-sm-2">
+      <section class="semester">
+    <div class="dropdown">
+  <button class="btn btn-lg btn-outline-success hvr-shadow-radial">Select Semester</button>
+  <div class="dropdown-content">
+    <ul>
+    <li><a href="#" class="hvr-icon-forward">First</a></li>
+      <li><a href="#" class="hvr-icon-forward">Second</a></li>
+        <li><a href="#" class="hvr-icon-forward">Third</a></li>
+          <li><a href="#" class="hvr-icon-forward">Fourth</a></li>
+            <li><a href="#" class="hvr-icon-forward">Fifth</a></li>
+              <li><a href="#" class="hvr-icon-forward">Sixth</a></li>
+                <li><a href="#" class="hvr-icon-forward">Seventh</a></li>
+                    <li><a href="#" class="hvr-icon-forward">Eighth</a></li>
+
+    </ul>
+
+  </div>
+</div>
+    </div>
+    </section>
+    </div>
+    </div>
+    <!-- post question section ends -->
+
+
+     <br />
+
+     <div class="row" style="max-width:100%;margin:0;">
+       <div class="panel with-nav-tabs panel-default">
+                       <div class="panel-heading">
+                               <ul class="nav nav-pills nav-justified">
+                                   <li><a class="hvr-sweep-to-right active"href="#recenttab" data-toggle="tab">Recent</a></li>
+                                   <li><a class="hvr-sweep-to-top"href="#trendingtab" data-toggle="tab">Trending</a></li>
+                                   <li><a class="hvr-sweep-to-left"href="#populartab" data-toggle="tab">Popular</a></li>
+
+                               </ul>
+                             </div>
+                             <div class="panel-body">
+                                 <div class="tab-content">
+                                     <div class="tab-pane fade in active tab1" id="recenttab">
+                                       <div class="col-md-2 col-xs-4">
+                                         <section class="tab1-left">
+                                           <img class="tabimages" src="" />
+                                           <h3>Mukesh Dubey</h3>
+                                           <h5>02 Mar,2017</h5>
+                                         </section>
+                                       </div>
+                                       <div class="col-md-10 col-xs-8">
+                                       <section class="tab1-right">
+                                         <h2>sample text</h2>
+                                         <p>sample paragraph</p>
+                                         <h4><i class="fa fa-tags" aria-hidden="true"></i>tagline</h4>
+                                         <a href="postanswer/index2.html"><button type="button" class="btn btn-info ">View Answers</button></a>
+                                       </section>
+                                       </div>
+                                       &nbsp;
+                                       <hr>
+                                       <div class="col-md-2 col-xs-4">
+                                         <section class="tab1-left">
+                                           <img class="tabimages" src="" />
+                                           <h3>Rohit Malhotra</h3>
+                                           <h5>02 Mar,2017</h5>
+                                         </section>
+                                       </div>
+                                       <div class="col-md-10 col-xs-8">
+                                       <section class="tab1-right">
+                                         <h2>sample text </h2>
+                                         <p>sample paragraph</p>
+                                         <h4><i class="fa fa-tags" aria-hidden="true"></i>tagline </h4>
+                                         <a href="postanswer/index2.html"><button type="button" class="btn btn-info ">View Answers</button></a>
+                                       </section>
+                                       </div>
+                                     </div>
+                                     <div class="tab-pane fade" id="trendingtab">
+                                       <div class="col-md-2 col-xs-4">
+                                         <section class="tab1-left">
+                                           <img class="tabimages" src="" />
+                                           <h3>Gaurav Kumar</h3>
+                                           <h5>02 Feb,2017</h5>
+                                         </section>
+                                       </div>
+                                       <div class="col-md-10 col-xs-8">
+                                       <section class="tab1-right">
+                                         <h2>sample text</h2>
+                                         <p>sample paragraph</p>
+                                         <h4><i class="fa fa-tags" aria-hidden="true"></i> tagline</h4>
+                                         <a href="postanswer/index2.html"><button type="button" class="btn btn-info">View Answers</button></a>
+                                       </section>
+                                       </div>
+                                       &nbsp;
+                                       <hr>
+                                       <div class="col-md-2 col-xs-4">
+                                         <section class="tab1-left">
+                                           <img class="faces" src="" />
+                                           <h3>Kuldeep Singh</h3>
+                                           <h5>02 Feb,2017</h5>
+                                         </section>
+                                       </div>
+                                       <div class="col-md-10 col-xs-8">
+                                       <section class="tab1-right">
+                                         <h2>sample text</h2>
+                                         <p>sample paragraph</p>
+                                         <h4><i class="fa fa-tags" aria-hidden="true"></i> related tag</h4>
+                                         <a href="postanswer/index2.html"><button type="button" class="btn btn-info ">View Answers</button></a>
+                                       </section>
+                                       </div>
+                                     </div>
+                                     <div class="tab-pane fade" id="populartab">
+                                       <div class="col-md-2 col-xs-4">
+                                         <section class="tab1-left">
+                                           <img class="faces" src="" />
+                                           <h3>Sunidhi Dhiman</h3>
+                                           <h5>02 Feb,2017</h5>
+                                         </section>
+                                       </div>
+                                       <div class="col-md-10 col-xs-8">
+                                       <section class="tab1-right">
+                                         <h2>sample text</h2>
+                                         <p>sample paragraph</p>
+                                         <h4><i class="fa fa-tags" aria-hidden="true"></i> sample tag</h4>
+                                         <a href="postanswer/index2.html"><button type="button" class="btn btn-info ">View Answers</button></a>
+                                       </section>
+                                       </div>
+                                       &nbsp;
+                                       <hr>
+                                       <div class="col-md-2 col-xs-4">
+                                         <section class="tab1-left">
+                                           <img class="faces" src="" />
+                                           <h3>Nitika Sharma</h3>
+                                           <h5>02 Feb,2017</h5>
+                                         </section>
+                                       </div>
+                                       <div class="col-md-10 col-xs-8">
+                                       <section class="tab1-right">
+                                         <h2>sample text</h2>
+                                         <p>
+                                          sample paragraph  </p>
+                                         <h4><i class="fa fa-tags" aria-hidden="true"></i> sample tag</h4>
+                                         <a href="postanswer/index2.html"><button type="button" class="btn btn-info ">View Answers</button></a>
+                                       </section>
+                                       </div>
+                                     </div>
+                             </div>
+                           </div>
+                           </div>
+                           </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+     <script src="js/bootstrap.min.js"></script>
+
+
+
+
+
+
+      <script>
+      function validateText(id)
+      {
+        if($("#"+id).val()==null || $("#"+id).val()=="")
+        {
+        var div = $("#"+id).closest("div");
+            div.removeClass(has-success);
+              $("#glypcn"+id).remove();
+        div.addClass(has-error has-feedback);
+          div.append(' <span id="glypcn'+id+'" class="glyphicon glyphicon-ok form-control-feedback"></span>')
+          return false;
+
+        }
+        else
+        {
+          var div = $("#"+id).closest("div");
+          div.removeClass(has-error);
+            div.addClass(has-success has-feedback);
+            $("#glypcn"+id).remove();
+          div.append(' <span id="glypcn'+id+'" class="glyphicon glyphicon-ok form-control-feedback"></span>')
+          return true;
+        }
+      }
+
+      $(document).ready(
+     function(){
+      $("#postbtn").click(function()
+      {
+         if(!validateText("contactname"))
+         {
+          return false;
+         }
+         if(!validateText("contactemail"))
+         {
+          return false;
+         }
+         if(!validateText("contactno"))
+         {
+          return false;
+         }
+         if(!validateText("semesterbutton"))
+         {
+          return false;
+         }
+         if(!validateText("subjectbutton"))
+         {
+          return false;
+         }
+         if(!validateText("relatedtag"))
+         {
+          return false;
+         }
+         if(!validateText("texthere"))
+         {
+          return false;
+         }
+          $("form#myModal").post();
+
+
+
+
+
+
+
+
+
+
+
+
+
+       }
+
+  );
+            });
+        </script>
+
+
+
+       </body>
+     </html>
